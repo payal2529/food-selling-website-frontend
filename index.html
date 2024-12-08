@@ -14,6 +14,93 @@
 
     <!-- custom css file link  -->.
     <link rel="stylesheet" href="style.css">
+<!-- Footer Styles -->
+<style>
+    .footer {
+        background-color: #111;
+        color: #fff;
+        padding: 50px 0;
+    }
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer-box {
+        width: 24%;
+        margin-bottom: 30px;
+    }
+    .footer-box h3 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .footer-box p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+        color: #bbb;
+    }
+    .footer-links {
+        list-style: none;
+        padding-left: 0;
+    }
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+    .footer-links a {
+        color: #bbb;
+        text-decoration: none;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    .footer-links a:hover {
+        color: #fff;
+    }
+    .footer-links i {
+        margin-right: 10px;
+    }
+    .social-links a {
+        margin-right: 15px;
+        color: #bbb;
+        font-size: 1.5rem;
+    }
+    .social-links a:hover {
+        color: #fff;
+    }
+    .newsletter-form {
+        display: flex;
+        align-items: center;
+    }
+    .email-input {
+        padding: 10px;
+        font-size: 1rem;
+        border: none;
+        width: 70%;
+        margin-right: 10px;
+    }
+    .btn {
+        padding: 10px 20px;
+        background-color: #f1c40f;
+        border: none;
+        font-size: 1rem;
+        color: #111;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    .btn:hover {
+        background-color: #d4ac0d;
+    }
+    .payment-img {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
 </head>
 
 <body>
@@ -428,42 +515,50 @@
     <!-- --------------------footer section starts------------------>
 
    <section class="footer">
-    <div class="box-container">
-        <div class="box">
+    <div class="footer-container">
+        <!-- Groco Logo and Description -->
+        <div class="footer-box">
             <h3>groco <i class="fas fa-shopping-basket"></i></h3>
-            <p>Food is a basic human need to stay alive. Therefore, it is important that we provide quality and nutritious food.</p>
+            <p>Food is a basic human need to stay alive. Therefore, it is important that we provide quality and nutritious food to sustain healthy living.</p>
             <div class="social-links">
-                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
 
-        <div class="box">
+        <!-- Contact Info -->
+        <div class="footer-box">
             <h3>Contact Info</h3>
-            <a href="#" class="links"><i class="fas fa-phone"></i>+123-456-7890</a>
-            <a href="#" class="links"><i class="fas fa-phone"></i>+111-222-3333</a>
-            <a href="mailto:porwal56@gmail.com" class="links"><i class="fas fa-envelope"></i>porwal56@gmail.com</a>
-            <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> Mumbai, India - 400144</a>
+            <ul class="footer-links">
+                <li><a href="tel:+1234567890" class="links"><i class="fas fa-phone"></i> +123-456-7890</a></li>
+                <li><a href="tel:+1112223333" class="links"><i class="fas fa-phone"></i> +111-222-3333</a></li>
+                <li><a href="mailto:porwal56@gmail.com" class="links"><i class="fas fa-envelope"></i> porwal56@gmail.com</a></li>
+                <li><a href="#" class="links"><i class="fas fa-map-marker-alt"></i> Mumbai, India - 400144</a></li>
+            </ul>
         </div>
 
-        <div class="box">
+        <!-- Quick Links -->
+        <div class="footer-box">
             <h3>Quick Links</h3>
-            <a href="#" class="links"><i class="fas fa-arrow-right"></i>Home</a>
-            <a href="#" class="links"><i class="fas fa-arrow-right"></i>Features</a>
-            <a href="#" class="links"><i class="fas fa-arrow-right"></i>Products</a>
-            <a href="#" class="links"><i class="fas fa-arrow-right"></i>Categories</a>
-            <a href="#" class="links"><i class="fas fa-arrow-right"></i>Reviews</a>
-            <a href="#" class="links"><i class="fas fa-arrow-right"></i>Blogs</a>
+            <ul class="footer-links">
+                <li><a href="#home" class="links"><i class="fas fa-arrow-right"></i> Home</a></li>
+                <li><a href="#features" class="links"><i class="fas fa-arrow-right"></i> Features</a></li>
+                <li><a href="#products" class="links"><i class="fas fa-arrow-right"></i> Products</a></li>
+                <li><a href="#categories" class="links"><i class="fas fa-arrow-right"></i> Categories</a></li>
+                <li><a href="#review" class="links"><i class="fas fa-arrow-right"></i> Reviews</a></li>
+                <li><a href="#blogs" class="links"><i class="fas fa-arrow-right"></i> Blogs</a></li>
+            </ul>
         </div>
 
-        <div class="box">
+        <!-- Newsletter Subscription -->
+        <div class="footer-box">
             <h3>Newsletter</h3>
-            <p>Subscribe for the latest updates and offers.</p>
-            <form action="#">
-                <input type="email" placeholder="Your Email" class="email" required>
-                <input type="submit" value="Subscribe" class="btn">
+            <p>Subscribe to our newsletter for the latest updates and exclusive offers.</p>
+            <form action="#" method="post" class="newsletter-form">
+                <input type="email" placeholder="Your Email" class="email-input" required>
+                <button type="submit" class="btn">Subscribe</button>
             </form>
             <img src="image/payment.png" class="payment-img" alt="Payment Methods">
         </div>
